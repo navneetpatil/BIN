@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+ void main()
+ {
+ char ch;
+ clrscr();
+ printf("Enter the character: ");
+ ch=getchar();
+ if(isalpha(ch))
+ {
+ 	ch=tolower(ch);
+ 	switch(ch)
+ 	{
+ 		case 'a':
+			case 'e':
+				case 'i':
+					case 'o':
+						case 'u':
+
+		printf("Vowels");
+		break;
+		default:
+			printf("Consonant");
+	}
+ }
+ else if(isdigit(ch)) printf("Digit");
+ else printf("Special character:");
+ //scanf("%c",&ch);
+ //if(ch>='a' && ch<='z') printf("Lower case");
+ //else printf("Upper case");
+ getch();
+ }

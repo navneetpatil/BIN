@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int pinNo,count=0;
+	clrscr();
+	pin:
+	printf("Enter the pinNo:");
+	scanf("%d",&pinNo);
+	if(pinNo==6823) printf("\nWelcome to SBI!!!");
+	else
+	{
+	 printf("Invalid pin\n");
+	 count++;
+	 if(count>=3) printf("You Have exceed Maximum wrong attemp");
+	 else
+	 goto pin;
+
+	}
+	 getch();
+}
